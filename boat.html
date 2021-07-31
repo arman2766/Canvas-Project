@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+   <meta charset="UTF-8">
+   <title>boat</title>
+   <style>
+      h4
+      {
+         color:green;
+         background:white;
+         padding:10px;
+         font-size:30px;
+
+      }
+      a{
+         text-decoration: none;
+         color:green;
+         background:black;
+         box-shadow: 5px 5px 10px gray;
+         padding: 10px;
+         border-radius: 10%;
+      }
+   </style>
+   </head>
+   <body background="11.jpg">
+   	 <h4><a href="index.html">HOME</a>&nbsp;&nbsp;Press the Ctrl+U to view code of this canvas 
+</h4>
+   <canvas id="arman" width="800" height="620">
+   </canvas>
+   <script type="text/javascript">
+   var canvas=document.getElementById("arman");
+   var ctx=canvas.getContext("2d");
+   
+	   ctx.beginPath();
+	   ctx.moveTo(450,550);
+	   ctx.lineTo(125,550);
+	   ctx.lineTo(100,450);
+	   ctx.lineTo(600,400);
+	   ctx.lineWidth="1";
+	   ctx.stroke();
+	   ctx.fillStyle="yellow";
+	   ctx.fill();
+	   ctx.closePath();
+	   
+			//boat curve
+		   ctx.beginPath();
+		   ctx.arc(450,400,150,0,0.5*Math.PI);
+		   ctx.fillStyle="yellow";
+		   ctx.fill();
+		   ctx.stroke();
+		   ctx.closePath();
+		
+	
+			   
+				//boat back pipe
+				ctx.beginPath();
+				ctx.moveTo(100,450);
+				ctx.lineTo(80,420);
+				ctx.lineWidth="5";
+				ctx.strokeStyle="yellow";
+				ctx.stroke();
+				ctx.fillStyle="yellow";
+				ctx.fill();
+				ctx.closePath();
+				
+						   
+					//boat kapda line 1
+					ctx.beginPath();
+					ctx.moveTo(80,420);
+					ctx.lineTo(350,210);
+					 ctx.lineTo(350,430);
+					ctx.lineWidth="3";
+					ctx.strokeStyle="black";
+					ctx.stroke();
+					ctx.fillStyle="#f07ddd";
+					ctx.fill();
+					ctx.closePath();
+			   
+				   
+			   
+	  
+		   
+		   //boat kapda right side line 1
+		   ctx.beginPath();
+		   ctx.moveTo(360,420);
+		   ctx.lineTo(400,200);
+		   ctx.lineTo(600,405);
+		   ctx.lineWidth="2";
+		   ctx.strokeStyle="black";
+		   ctx.stroke();
+		   ctx.fillStyle="#f07ddd";
+		   ctx.fill();
+		   ctx.closePath();
+	   
+		   //boat down line
+			ctx.beginPath();
+		   ctx.moveTo(125,550);
+		   ctx.lineTo(100,450);
+		   ctx.lineTo(600,400);
+		   ctx.lineWidth="1";
+		   ctx.stroke();
+		   ctx.fillStyle="blue";
+		   ctx.fill();
+		   ctx.closePath();
+		   
+				   //pipe
+				   ctx.fillStyle="#C19A6B";
+				   ctx.fillRect(350,150,8,276);
+				   
+					 
+				   //flag orange
+				   ctx.fillStyle="orange";
+				   ctx.fillRect(350,95,80,20);
+				   
+					 
+				   //flag
+				   ctx.fillStyle="white";
+				   ctx.fillRect(350,110,80,20);
+				   
+								 
+							   //flag
+							   ctx.fillStyle="green";
+							   ctx.fillRect(350,130,80,20);
+							   
+							   //flag circle
+							   ctx.beginPath();
+							   ctx.arc(390,120,10,0,2*Math.PI);
+							   ctx.stroke();
+							   ctx.closePath();
+							   
+							   // flag circle line 1
+							   ctx.beginPath();
+							   ctx.moveTo(400,120);
+							   ctx.lineTo(380,120);
+							   ctx.lineWidth="1";
+							   ctx.strokeStyle="blue";
+							   ctx.stroke();
+							   ctx.fillStyle="blue";
+							   ctx.fill();
+							   ctx.closePath();
+							   
+			   // flag circle line 2
+			   ctx.beginPath();
+			   ctx.moveTo(390,110);
+			   ctx.lineTo(390,130);
+			   ctx.lineWidth="1";
+			   ctx.strokeStyle="blue";
+			   ctx.stroke();
+			   ctx.fillStyle="blue";
+			   ctx.fill();
+			   ctx.closePath();
+			   
+			   // flag circle line 3
+			   ctx.beginPath();
+			   ctx.moveTo(382,115);
+			   ctx.lineTo(398,125);
+			   ctx.lineWidth="1";
+			   ctx.strokeStyle="blue";
+			   ctx.stroke();
+			   ctx.fillStyle="blue";
+			   ctx.fill();
+			   ctx.closePath();
+							   
+							   // flag circle line 4
+							   ctx.beginPath();
+							   ctx.moveTo(382,128);
+							   ctx.lineTo(398,115);
+							   ctx.lineWidth="1";
+							   ctx.strokeStyle="blue";
+							   ctx.stroke();
+							   ctx.fillStyle="blue";
+							   ctx.fill();
+							   ctx.closePath();
+							   //text
+							   ctx.font = "20px Georgia";
+							   ctx.fillText("Design by Arman khan",590,580);
+	  
+  
+   </script>
+   </body>
+   </html>
+   
